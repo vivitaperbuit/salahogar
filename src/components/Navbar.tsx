@@ -12,7 +12,7 @@ export const Navbar = () => {
         <div className="flex items-center">
           <div className="flex items-center gap-2">
             <img 
-              src="/lovable-uploads/70d5e515-c731-4a2d-b156-75206b9d0f84.png" 
+              src="/lovable-uploads/Logo-Sala-hogar.png" 
               alt="Salahogar Logo" 
               className="h-12"
             />
