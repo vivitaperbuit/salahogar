@@ -1,17 +1,18 @@
-
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 
 interface ProductCardProps {
+  id: number;
   image: string;
   name: string;
   description: string;
+  onClick?: () => void;
 }
 
-export const ProductCard = ({ image, name, description }: ProductCardProps) => {
+export const ProductCard = ({ id, image, name, description, onClick }: ProductCardProps) => {
   return (
-    <Card className="overflow-hidden transition-all hover:shadow-md">
+    <Card className="overflow-hidden transition-all hover:shadow-md cursor-pointer" onClick={onClick}>
       <div className="aspect-square overflow-hidden">
         <img 
           src={image} 
@@ -31,4 +32,4 @@ export const ProductCard = ({ image, name, description }: ProductCardProps) => {
       </CardFooter>
     </Card>
   );
-};
+}; 

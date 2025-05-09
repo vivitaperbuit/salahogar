@@ -1,13 +1,12 @@
-
-import { Navbar } from "@/components/Navbar";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/Hero";
-import { Catalog } from "@/components/sections/Catalog";
-import { Services } from "@/components/sections/Services";
-import { About } from "@/components/sections/About";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { WorkProcess } from "@/components/sections/WorkProcess";
-import { Contact } from "@/components/sections/Contact";
-import { Footer } from "@/components/Footer";
+import { Catalog } from "@/features/catalog/Catalog";
+import { Services } from "@/features/services/Services";
+import { About } from "@/features/about/About";
+import { Testimonials } from "@/features/testimonials/Testimonials";
+import { WorkProcess } from "@/features/workprocess/WorkProcess";
+import { Contact } from "@/features/contact/Contact";
 
 const Index = () => {
   return (
